@@ -32,6 +32,7 @@ public class BasicCase {
         capabilities.setCapability("app",apk);
         capabilities.setCapability("appActivity",appActivity);
         capabilities.setCapability("noSign",true); //不重签名
+        capabilities.setCapability("noReset",true);
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
         NewsUI = new WYNewsUI(driver);
         pageManager = new PageManager(NewsUI);
