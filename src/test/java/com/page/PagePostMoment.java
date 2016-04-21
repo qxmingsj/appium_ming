@@ -11,15 +11,19 @@ public class PagePostMoment {
     public PagePostMoment(WYNewsUI news){
         this.news =news;
     }
+
     public WebElement getSendBtn(){
-        return news.findById("com.tencent.mm:id/cdb");
+        return news.findById("com.tencent.mm:id/cf8");
     }
+
     public void clickSendBtn(){
         getSendBtn().click();
     }
+
     public WebElement getMomentEditText(){
-        return news.findById("com.tencent.mm:id/bne");
+        return news.findById("com.tencent.mm:id/bp_");
     }
+
     public void enterMoment(String text){
         getMomentEditText().click();
         getMomentEditText().sendKeys(text);

@@ -1,4 +1,4 @@
-package com.com.login;
+package com.login;
 
 import com.basic.BasicCase;
 import org.junit.Test;
@@ -9,7 +9,7 @@ import org.junit.Test;
 public class ToWebViewPage extends BasicCase {
     @Test
     public void fist() throws InterruptedException {
-        pageManager.pageNavigation().waitForPageLoad();
+        pageManager.wait123().waitPageHomeLoad();
         pageManager.pageNavigation().clickNewsItem(2);
         try {
             Thread.sleep(4000);

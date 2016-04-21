@@ -44,7 +44,15 @@ public class WYNewsUI {
     }
 
 
-    public  WebElement longclick(String name) throws InterruptedException {
+    public WebElement longClickClassName(String classname,int index) throws  InterruptedException{
+        WebElement webElement1= (WebElement) driver.findElements(By.className(classname)).get(index);
+        TouchAction action = new TouchAction(driver);
+        action.longPress(webElement1).release().perform();
+        Thread.sleep(2000);
+        return webElement1;
+    }
+
+    public  WebElement longClickName(String name) throws InterruptedException {
         WebElement webElement = driver.findElement(By.name(name));
         TouchAction action = new TouchAction(driver);
         action.longPress(webElement).release().perform();
@@ -56,4 +64,7 @@ public class WYNewsUI {
     public AppiumDriver getDriver() {
         return driver;
     }
+
+
+
 }

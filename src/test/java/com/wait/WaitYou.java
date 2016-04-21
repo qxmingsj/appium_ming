@@ -1,4 +1,4 @@
-package com.basic;
+package com.wait;
 
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;

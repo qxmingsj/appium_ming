@@ -16,7 +16,7 @@ import java.net.URL;
 public class BasicCase {
     AppiumDriver driver;
     private  String apkName ="news.apk";
-//    private  String deviceName ="Nexus 5";
+//    private  String deviceName1 ="Nexus 5";
     private  String deviceName ="MI 3";
     private  String platformVersion = "4.4.4";
     private  String appActivity ="com.netease.nr.biz.ad.AdActivity";
@@ -40,4 +40,5 @@ public class BasicCase {
     public void tearDown() {
         driver.quit();
     }
+
 }

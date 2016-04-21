@@ -1,4 +1,4 @@
-package com.com.login;
+package com.login;
 
 import com.basic.BasicCase;
 import org.junit.Test;
@@ -9,11 +9,11 @@ import org.junit.Test;
 public class CrossAppTest extends BasicCase {
     @Test
     public void share() throws InterruptedException {
-        pageManager.pageNavigation().waitForPageLoad();
-        pageManager.pageNavigation().clickNewsItem(2);
+        pageManager.wait123().waitPageHomeLoad();
+        pageManager.pageNavigation().clickNewsItem(1);
         pageManager.pageSetting().clickSettingsView();
         pageManager.pageSetting().clickShareToWeChat();
-        pageManager.pagePostMoment().enterMoment("hello");
+        pageManager.pagePostMoment().enterMoment("MMMMM");
         pageManager.pagePostMoment().clickSendBtn();
         Thread.sleep(10000);
     }

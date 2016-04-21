@@ -1,4 +1,4 @@
-package com.com.login;
+package com.login;
 
 import com.basic.BasicCase;
 import com.page.PageBasic;
@@ -12,10 +12,9 @@ public class WebViewTest extends BasicCase {
     @Test
     //真机跑不通
     public void test()throws InterruptedException{
-        pageManager.pageNavigation().waitForPageLoad();
-        pageManager.pageNavigation().clickNewsItem(2);
+        pageManager.wait123().waitPageHomeLoad();
+        pageManager.pageNavigation().clickNewsItem(3);
         pageManager.pageBasic().switchContext();
-        pageManager.pageNavigation().waitForPageLoad();
         System.out.println(pageManager.pageSetting().getNewsTitleText());
 
 

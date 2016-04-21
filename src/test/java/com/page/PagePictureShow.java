@@ -13,8 +13,12 @@ public class PagePictureShow {
     public void clickMoreBtn(){
         news.findById("com.netease.newsreader.activity:id/biz_pic_menu_more").click();
     }
-    public void clickCollection(){
-        news.findById("com.netease.newsreader.activity:id/icon").click();
+    public void clickMoreBtn2(){
+        news.findById("com.netease.newsreader.activity:id/biz_newspage_menu_more").click();
+    }
+
+    public void clickThreeBtn(int index){
+        news.findByIdAndIndex("com.netease.newsreader.activity:id/title",index).click();
     }
     public void clickBackBtn(){
         news.findByClassName("android.widget.ImageButton").click();
